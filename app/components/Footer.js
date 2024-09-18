@@ -15,7 +15,7 @@ const Footer = () => {
         <div className={styles.footerLinks}>
           <ul>
             <li><Link href="../">Home</Link></li>
-            <li><Link href="../about">About Us</Link></li>
+            <li><Link href="../routes/about">About Us</Link></li>
             <li><a href="#">Delivery</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
