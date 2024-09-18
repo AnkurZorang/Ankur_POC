@@ -1,0 +1,127 @@
+
+.navbar {
+  background-color: #f7f7f7;
+  padding: 10rem;
+  position: relative;
+  z-index: 10; 
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.logo{
+ margin-left: 100px;
+  
+}
+
+.nav-links {
+  margin-top: 15px;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a, .dropdown-toggle {
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.nav-links a:hover, .dropdown-toggle:hover {
+  color: black; /* Optional: Change color on hover */
+  border-bottom: 2px solid black; /* Underline on hover */
+}
+
+/* Underline styling for active link */
+.active-link {
+  color: black; /* Optional: Change color for the active link */
+  border-bottom: 2px solid black; /* Add underline to active link */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #444;
+  padding: 0.5rem 1rem;
+  display: none; /* Hidden by default */
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 0;
+}
+
+.dropdown-menu a {
+  color: black;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: #989898; 
+}
+
+/* Show the dropdown menu when open */
+.dropdown:hover .dropdown-menu,
+.dropdown-menu.open {
+  display: block;
+}
+
+/* Mobile menu icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links li {
+    padding: 0.5rem 0;
+  }
+
+  .dropdown-menu {
+    position: static;
+    padding: 0;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: none; /* On mobile, dropdown should only open on click, not hover */
+  }
+}
