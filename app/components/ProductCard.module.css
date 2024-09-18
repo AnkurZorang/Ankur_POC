@@ -1,0 +1,41 @@
+.card {
+  background-color: #000;
+  padding: 20px;
+ 
+  text-align: center;
+  color: #fff;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.image {
+  width: 100%;
+  height: auto;
+ 
+}
+
+.productName {
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.category, .subCategory {
+  font-size: 14px;
+  color: #888;
+}
+
+.price {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 5px;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}

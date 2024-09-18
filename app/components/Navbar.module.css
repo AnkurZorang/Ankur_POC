@@ -1,0 +1,235 @@
+.navbar {
+  background-color: #fff; 
+  display: flex;
+  position: fixed;
+  justify-content: left;
+  align-items: center; 
+  flex-direction: row;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  height: 80px; 
+  z-index: 5;
+}
+
+.navList {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  align-items: center; 
+  margin: 0px;
+  
+  flex-direction: row;
+  z-index: 1;
+  height: 100%; 
+}
+
+.navItem {
+  position: relative;
+  height: auto;
+  align-items: center;
+  padding: 10px; 
+}
+
+.navIcons {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem; 
+}
+.cartIcon i, 
+.profileIcon i {
+  font-size: 1.5rem; 
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.cartIcon i:hover,
+.profileIcon i:hover {
+  color: #000; 
+}
+
+.navItem a,
+.navItem span {
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  width: auto; 
+  height: 100%; 
+}
+
+.navItem a:hover,
+.navItem span:hover {
+  color: #333;
+}
+
+.navItem a::after,
+.navItem span::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #333;
+  width: 0;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+
+.navItem a:hover::after,
+.navItem span:hover::after {
+  width: 100%;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: -1;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0.6rem 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  width: auto; 
+  height: auto; 
+  z-index: 0;
+}
+
+.dropdownItem {
+  padding: 0.5rem 1rem;
+ 
+}
+
+.dropdownItem a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.dropdownItem a:hover {
+  color: #333;
+  background-color: #d0d0d0;
+}
+
+.searchBar {
+  padding: 0.5rem;
+  border: 1px solid #fff;
+  outline: none;
+  margin-left: 27%;
+  font-size: .8rem;
+  transition: border 0.3s ease;
+  background-color: #e3e3e3;
+  width: 200px; 
+}
+
+.searchBar:focus {
+  border: 1px solid #000;
+}
+
+.navLogo {
+  margin-left: 100px; 
+}
+
+.logo {
+  width:50px;
+  height: auto;
+  max-width: 100%; 
+  max-height: 100%;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.hamburgerIcon {
+  width: 25px;
+  height: 2px;
+  background: #000;
+  position: relative;
+}
+
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+  content: '';
+  width: 25px;
+  height: 2px;
+  background: #000;
+  position: absolute;
+  left: 0;
+}
+
+.hamburgerIcon::before {
+  top: -8px;
+}
+
+.hamburgerIcon::after {
+  top: 8px;
+}
+
+.navListOpen {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; 
+  width: 100%; 
+  height: 100%; 
+}
+
+.navListOpen .navItem {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .navList {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #e9e9e9;
+    flex-direction: column;
+    margin-top: 200px;
+    width: 100%;
+    height:auto;
+    gap: 0;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  }
+   
+  
+  .navListOpen {
+    display: flex;
+    background-color: #fff; 
+    width: 100%; 
+    
+  }
+
+  .navLogo {
+    margin: 0;
+    margin-right: 5%;
+    margin-left: 10%;
+    width: 20%;
+  }
+
+  .logo {
+    width: 100px;
+    height: auto;
+    max-width: 100%; 
+  }
+
+  .searchBar {
+    width: 50%;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+

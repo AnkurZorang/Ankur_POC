@@ -1,0 +1,74 @@
+
+
+.container {
+    display: flex;
+    gap: 2rem;
+    padding:20% ;
+    padding-top: 10%;
+  }
+  
+  .imageSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .thumbnailList {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .thumbnail {
+    width: 60px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+  }
+  
+  .mainImage {
+    width: 300px;
+    margin-top: 1rem;
+  }
+  
+  .detailsSection {
+  
+    flex-grow: 1;
+  }
+  .detailsSection h3{
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .rating {
+    font-size: 1rem;
+    color: #ff8800;
+  }
+  
+  .sizeSelection {
+    margin: 1rem 0;
+  }
+  
+  .sizes {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .sizeButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .addToCartButton {
+    margin-top: 1rem;
+    background-color: black;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .extraInfo {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    color: #888;
+  }
+  

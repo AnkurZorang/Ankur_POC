@@ -1,0 +1,102 @@
+.aboutUsSection {
+    padding: 100px 0;
+    padding-bottom: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .imageWrapper {
+    flex: 1;
+    padding-right: 50px;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .contentWrapper {
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+  }
+  
+  .highlight {
+    color: #2e354f;
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .subTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .whyChooseUsSection {
+    padding: 30px 20px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: #2b2b2b;
+  }
+  
+  .highlight {
+    color: #2e354f;
+  }
+  
+  .cardContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background-color: #000;
+    border: 1px solid #e3e3e3;
+    padding: 25px 50px;
+    flex: 1;
+    text-align: left;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+  }
+  
+  .cardText {
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  
