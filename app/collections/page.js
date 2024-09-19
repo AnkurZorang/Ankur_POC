@@ -13,7 +13,7 @@ export default function Page() {
   const [filteredProducts, setFilteredProducts] = useState(productsData);
   const [filters, setFilters] = useState({
     category: [],
-    type: []
+    subCategory: []
   });
 
   const handleSearch = (e) => {
@@ -40,7 +40,7 @@ export default function Page() {
 
     const filtered = productsData.filter((product) =>
       (updatedFilters.category.length === 0 || updatedFilters.category.includes(product.category)) &&
-      (updatedFilters.type.length === 0 || updatedFilters.type.includes(product.type))
+      (updatedFilters.subCategory.length === 0 || updatedFilters.subCategory.includes(product.subCategory))
     );
 
     setFilteredProducts(filtered);
@@ -84,7 +84,7 @@ export default function Page() {
             <input
               type="checkbox"
               value="Topwear"
-              onChange={(e) => handleFilterChange(e, "type")}
+              onChange={(e) => handleFilterChange(e, "subCategory")}
             />
             Topwear
           </label>
@@ -92,7 +92,7 @@ export default function Page() {
             <input
               type="checkbox"
               value="Bottomwear"
-              onChange={(e) => handleFilterChange(e, "type")}
+              onChange={(e) => handleFilterChange(e, "subCategory")}
             />
             Bottomwear
           </label>
@@ -100,7 +100,7 @@ export default function Page() {
             <input
               type="checkbox"
               value="Winterwear"
-              onChange={(e) => handleFilterChange(e, "type")}
+              onChange={(e) => handleFilterChange(e, "subCategory")}
             />
             Winterwear
           </label>
