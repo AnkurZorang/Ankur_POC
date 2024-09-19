@@ -13,9 +13,7 @@ export default function Page() {
   const subtotal = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
   const total = subtotal + shippingFee;
   
-    if (cartItems.length === 0) {
-      return <p>Your cart is empty.</p>;
-    }
+   
     
   return (
 <div className={styles.cartPage}>
