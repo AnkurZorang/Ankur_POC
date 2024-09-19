@@ -1,12 +1,11 @@
+
 "use client";
+import ProductDetails from '../components/ProductDetails';
 
-
-import ProductDetails from '../../../components/ProductDetails';
-import { products } from '../../../assets/assets'; 
+import { products } from '../assets/assets';  
 
 export default function ProductPage({ params }) {
   const { id } = params;
-
   const product = products.find((p) => p._id === id);
 
   if (!product) {
@@ -14,8 +13,8 @@ export default function ProductPage({ params }) {
   }
 
   return (
-    <div>
+   
       <ProductDetails product={product} />
-    </div>
+   
   );
 }

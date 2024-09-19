@@ -2,8 +2,10 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
+
 import styles from './Navbar.module.css'; 
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
+
 const Navbar = () => {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,13 +27,13 @@ const Navbar = () => {
       <ul className={`${styles.navList} ${menuOpen ? styles.navListOpen : ''}`}>
     
       <li className={styles.navItem}>
-          <Link href="../routes/about">COLLECTIONS</Link>
+          <Link href="../collections">COLLECTIONS</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="../routes/about">ABOUT</Link>
+          <Link href="../about">ABOUT</Link>
         </li>
         <li className={styles.navItem}>
-          <Link href="../routes/contactus">CONTACT</Link>
+          <Link href="../contactus">CONTACT</Link>
         </li>
         
       </ul>
@@ -41,7 +43,7 @@ const Navbar = () => {
             className={styles.searchBar}
           /></>
   <div className={styles.navIcons}>
-    <span className={styles.cartIcon}><i className="fas fa-shopping-cart"></i></span>
+  <span className={styles.cartIcon}><Link href="../cart"><i className="fas fa-shopping-cart"></i></ Link></span>
     <span className={styles.profileIcon}><i className="fas fa-user-circle"></i></span>
   </div>
     </nav>

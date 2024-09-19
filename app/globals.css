@@ -1,3 +1,7 @@
-main{
-    padding-top: 60px;
+body{
+    display: inline;
+    margin:0;
+    
+    flex-direction:row;
+    justify-content: center;
 }

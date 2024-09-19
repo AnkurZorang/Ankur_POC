@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fefefe;
+    margin: 2%;
+    margin-top: 100px;
+    border: 1px solid #e6e6e6;
+  }
+  
+  .textSection {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .title {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  
+  .shopLink {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .shopLink:hover .underline {
+    width: 100%;
+  }
+  
+  .underline {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #333;
+    position: absolute;
+    bottom: -2px;
+    transition: width 0.3s ease;
+  }
+  
+  .imageSection {
+    flex: 1;
+    background-color: #ffdfdf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: cover;
+  }
+  

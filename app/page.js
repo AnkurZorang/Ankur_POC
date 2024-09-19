@@ -1,16 +1,15 @@
 import Image from "next/image";
 import Newsletter from "./components/Newsletter";
 import ProductList from "./components/ProductList";
+import LatestCard from "./components/LatestCard";
+
 
 export default function Home() {
   return (
-    <main >
       <div>
+        <LatestCard />
         <ProductList />
-        <Newsletter /></div>
-    
-    
-   
-    </main>
+        <Newsletter />
+      </div>
   );
 }
