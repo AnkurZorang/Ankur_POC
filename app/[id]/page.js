@@ -3,6 +3,8 @@
 import ProductDetails from '../components/ProductDetails';
 
 import { products } from '../assets/assets';  
+import RelatedProducts from '../components/RelatedProducts';
+import Newsletter from '../components/Newsletter';
 
 export default function ProductPage({ params }) {
   const { id } = params;
@@ -13,8 +15,11 @@ export default function ProductPage({ params }) {
   }
 
   return (
-   
+       <div>
       <ProductDetails product={product} />
+      <RelatedProducts mainProduct={product} products={products}/>
+      <Newsletter />
+      </div>
    
   );
 }

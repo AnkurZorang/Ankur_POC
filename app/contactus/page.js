@@ -1,8 +1,8 @@
 
 import React from 'react';
 import styles from './ContactUs.module.css';
-import Newsletter from '@/app/components/Newsletter';
-import { assets } from '@/app/assets/assets';
+import Newsletter from '../components/Newsletter';
+import { assets } from '../assets/assets';
 
 export default function page() {
     return (
